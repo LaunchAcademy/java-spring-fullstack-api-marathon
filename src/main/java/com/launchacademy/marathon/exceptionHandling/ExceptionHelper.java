@@ -18,7 +18,7 @@ public class ExceptionHelper {
 
     @ExceptionHandler(value = { ArtistNotCreatedException.class })
   public ResponseEntity<Map<String, List>> handleArtistNotCreatedException(ArtistNotCreatedException ex) {
-    System.out.println("Could not create menu");
+    System.out.println("Could not create Artist");
     List<String> errorList = new ArrayList<>();
     errorList.add(ex.getMessage());
     Map<String, List> responseBody = new HashMap<>();
@@ -28,7 +28,7 @@ public class ExceptionHelper {
 
     @ExceptionHandler(value = { SongNotCreatedException.class })
     public ResponseEntity<Map<String, List>> handleSongNotCreatedException(SongNotCreatedException ex) {
-    System.out.println("Could not create meal");
+    System.out.println("Could not create Song");
     List<String> errorList = new ArrayList<>();
     errorList.add(ex.getMessage());
     Map<String, List> responseBody = new HashMap<>();

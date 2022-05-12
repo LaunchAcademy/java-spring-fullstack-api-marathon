@@ -77,7 +77,7 @@ So I can remember my favorite songs by them
 Acceptance Criteria:
 
 - When a user navigates to `/artists/:id`, they should see the name of the artist with that `id`.
-- There should also be a list of all the `songs` related to that specific menu.
+- There should also be a list of all the `songs` related to that specific artist.
 
 Implementation Details:
 
