@@ -2,7 +2,6 @@ package com.launchacademy.marathon.seeders;
 
 import com.launchacademy.marathon.models.Artist;
 import com.launchacademy.marathon.services.ArtistService;
-import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -18,7 +17,7 @@ public class ArtistsSeeder {
   }
 
   public void seed() {
-    if (((List<Artist>)artistService.findAll()).size() == 0) {
+    if (artistService.findAll().size() == 0) {
       Artist artist1 = new Artist();
       artist1.setName("Ed Sheeran");
       artistService.save(artist1);
