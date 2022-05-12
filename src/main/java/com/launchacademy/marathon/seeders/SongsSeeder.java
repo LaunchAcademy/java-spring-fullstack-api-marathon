@@ -23,42 +23,42 @@ public class SongsSeeder {
   }
 
   public void seed() {
-    // if (((List<Song>)songService.findAll()).size() == 0) {
-    //   Artist ed = artistService.findByName("Ed Sheeran").get();
-    //   Artist tom = artistService.findByName("Tom Petty").get();
-    //   Artist kelly = artistService.findByName("Kelly McFarling").get();
+     if (((List<Song>)songService.findAll()).size() == 0) {
+       Artist ed = artistService.findByName("Ed Sheeran");
+       Artist tom = artistService.findByName("Tom Petty");
+       Artist kelly = artistService.findByName("Kelly McFarling");
 
-    //   Song edSong = new Song();
-    //   edSong.setTitle("Shivers");
-    //   edSong.setGenre("Pop");
-    //   edSong.setReleaseYear(2021);
-    //   edSong.setExplicitContent(false);
-    //   edSong.setArtist(ed);
-    //   songService.save(edSong);
+       Song edSong = new Song();
+       edSong.setTitle("Shivers");
+       edSong.setGenre("Pop");
+       edSong.setReleaseYear(2021);
+       edSong.setExplicitContent(false);
+       edSong.setArtist(ed);
+       songService.save(edSong);
 
-    //   Song tomSong = new Song();
-    //   tomSong.setTitle("Free Fallin'");
-    //   tomSong.setGenre("Rock");
-    //   tomSong.setReleaseYear(2021);
-    //   tomSong.setExplicitContent(false);
-    //   tomSong.setArtist(tom);
-    //   songService.save(tomSong);
+       Song tomSong = new Song();
+       tomSong.setTitle("Free Fallin'");
+       tomSong.setGenre("Rock");
+       tomSong.setReleaseYear(2021);
+       tomSong.setExplicitContent(false);
+       tomSong.setArtist(tom);
+       songService.save(tomSong);
 
-    //   Song kellySong1 = new Song();
-    //   kellySong1.setTitle("Both");
-    //   kellySong1.setGenre("Folk/Country");
-    //   kellySong1.setReleaseYear(2017);
-    //   kellySong1.setExplicitContent(false);
-    //   kellySong1.setArtist(kelly);
-    //   songService.save(kellySong1);
+       Song kellySong1 = new Song();
+       kellySong1.setTitle("Both");
+       kellySong1.setGenre("Folk/Country");
+       kellySong1.setReleaseYear(2017);
+       kellySong1.setExplicitContent(false);
+       kellySong1.setArtist(kelly);
+       songService.save(kellySong1);
 
-    //   Song kellySong2 = new Song();
-    //   kellySong2.setTitle("Birds");
-    //   kellySong2.setGenre("Folk/Country");
-    //   kellySong2.setReleaseYear(2021);
-    //   kellySong2.setExplicitContent(false);
-    //   kellySong2.setArtist(kelly);
-    //   songService.save(kellySong2);
-    // }
+       Song kellySong2 = new Song();
+       kellySong2.setTitle("Birds");
+       kellySong2.setGenre("Folk/Country");
+       kellySong2.setReleaseYear(2021);
+       kellySong2.setExplicitContent(false);
+       kellySong2.setArtist(kelly);
+       songService.save(kellySong2);
+     }
   }
 }
